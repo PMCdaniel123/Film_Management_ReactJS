@@ -32,7 +32,155 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 5px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup img {
+  width: 100%;
+}
+
+.popup h3 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #06D85F;
+}
+
+.nav-container {
+  /* width: 100% !important; */
+  border-radius: 0px 0px 20px 20px;
+  border: 1px solid black;
+  margin: 0;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-row {
+  height: 64px;
+  line-height: 64px;
+  align-items: center;
+}
+
+.margin-100 {
+  margin-top: 100px !important;
+}
+
+.col-sm {
+  font-weight: 600;
+}
+
+.card {
+  min-height: 400px;
+  position: relative;
+}
+
+.card p {
+  bottom: 10px;
+}
+
+.film-detail img {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.product-details {
+  display: block;
+}
+
+.product-details p {
+  text-align: left;
+  margin: 30px auto 30px;
+  width: 80%;
+}
+
+.foot-page {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 10%;
+  margin-bottom: 25px;
+  border-right: white solid 1px;
+}
+
+.foot_contact_left {
+  margin-left: 10px;
+  display: flex;
+  gap: 100px;
+  align-items: flex-end;
+}
+
+.foot_contact_right {
+  display: flex;
+  height: 100%;
+  margin-right: 10px;
+  font-size: 0.7rem;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.foot_contact_right p {
+  margin: 0;
+}
+
+.foot_contact_right a {
+  font-size: 0.7rem;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 5px;
+  color: #ffffff;
+}
+
+.foot_contact_left a {
+  color: aliceblue;
+  font-size: 2rem;
+  text-decoration: none;
+  display: flex;
+  align-self: flex-end;
 }
