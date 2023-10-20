@@ -33,9 +33,9 @@ export default function Navigation() {
 
                     </Navbar></div>
                 <div className="col-sm">
-                    <a href="/#" className="switch-mode" onClick={toggle} style={{ backgroundColor: theme.backgroundColor, color: theme.color, outline: 'none', textDecoration: 'none' }} data-testid="toggle-theme-btn">
+                    <h8 className="switch-mode" onClick={toggle} style={{ backgroundColor: theme.backgroundColor, color: theme.color, outline: 'none', textDecoration: 'none' }} data-testid="toggle-theme-btn">
                         Change to {!dark ? 'Dark' : 'Light'} mode
-                    </a>
+                    </h8>
                 </div>
             </div>
 
